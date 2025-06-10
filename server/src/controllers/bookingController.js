@@ -1,4 +1,4 @@
-const Booking = require('../models/Booking');
+const Booking = require('../models/BookingModel');
 const sendEmail = require('../utils/sendEmail');
 
 exports.getBookingForm = (req, res) => {
