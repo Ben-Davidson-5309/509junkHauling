@@ -1,0 +1,44 @@
+/* TermsOfService.css */
+.terms-container {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.8;
+}
+
+.terms-content article {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 2rem;
+}
+
+.privacy-card {
+  border-left: 4px solid #157347;
+}
+
+.accordion-button {
+  background-color: #e9f5ee;
+  color: #157347;
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #d1e7dd;
+}
+
+address {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* Add to TermsOfService.css */
+.card {
+  background-color: #fff !important; /* Force solid white */
+  border: 1px solid #dee2e6 !important; /* Clean border */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important; /* Subtle depth */
+}
+
+.card-body {
+  background: transparent !important; /* Keep inner area transparent */
+  padding: 1.5rem; /* Control spacing */
+}
+
