@@ -5,7 +5,7 @@ const path = require('path');
 const connectDB = require('./src/config/db'); // Import your DB connection
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 const bookingRoutes = require("./src/routes/bookingRoutes");
 
