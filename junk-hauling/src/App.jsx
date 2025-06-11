@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 import yaml from "js-yaml";
 import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -52,23 +52,28 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
+    <>
       <FadedBackground />
       <Header />
       <main>
-      <Routes>
-        {routes.map((route, index) => {
-          const Component = componentMap[route.component];
-          if (!Component) {
-            console.error(`Component "${route.component}" not found in componentMap.`);
-            return null;
-          }
-          return <Route key={index} path={route.path} element={<Component />} />;
-        })}
-      </Routes>
-    </main>
-    <Footer />
-    </Router>
+        {routes.length > 0 ? (
+          <Routes>
+            {routes.map((route, index) => {
+              const Component = componentMap[route.component];
+              if (!Component) {
+                console.error(`Component "${route.component}" not found in componentMap.`);
+                return null;
+              }
+              return <Route key={index} path={route.path} element={<Component />} />;
+            })}
+          </Routes>
+        ) : (
+          // Optional: show a loading spinner or nothing while routes load
+          null
+        )}
+      </main>
+      <Footer />
+    </>
   );
 };
 
