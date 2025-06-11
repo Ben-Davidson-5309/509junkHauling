@@ -5,7 +5,7 @@ const FamilyAboutSection = () => (
   <div className="row align-items-center">
     <div className="col-md-5 text-center mb-4 mb-md-0">
       <img
-        src="/NatesFamilyPic.jpeg"
+        src="/images/NatesFamilyPic.jpeg"
         alt="Our Family"
         className="img-fluid rounded shadow"
         style={{ maxHeight: "350px", objectFit: "cover" }}

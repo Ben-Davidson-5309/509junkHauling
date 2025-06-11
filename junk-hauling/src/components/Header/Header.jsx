@@ -30,7 +30,7 @@ function Header() {
         <div className="logo">
           <Link to="/">
             <img
-              src="/junk-hauling-logo.png"
+              src="/images/junk-hauling-logo.png"
               alt="Logo"
               width="60"
               height="60"
