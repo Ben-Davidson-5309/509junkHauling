@@ -1,6 +1,6 @@
 /* src/components/FadedBackground/FadedBackground.css */
 .faded-background {
-  background-image: url("../../../public/images/junk-hauling-logo.png"); /* we'll put the image here */
+  background-image: url("../../../images/junk-hauling-logo.png"); /* we'll put the image here */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

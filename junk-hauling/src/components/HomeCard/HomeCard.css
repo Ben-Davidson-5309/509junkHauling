@@ -1,7 +1,8 @@
 .home-card {
   border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #f9fdf9;
+  background-color: #538DD7 !important;
+  color: white;
   display: flex;
   flex-direction: column;
   width: 100%; /* Ensures card fills the column width */
