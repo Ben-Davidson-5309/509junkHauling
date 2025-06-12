@@ -1,40 +1,44 @@
-.home-card {
+/* HomeCard.css */
+.card.home-card {
   border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #538DD7 !important;
-  color: white;
+  background-color: #A1D99B !important;
   display: flex;
   flex-direction: column;
-  width: 100%; /* Ensures card fills the column width */
-  max-width: 100%; /* Prevents overflow */
+  width: 100%;
+  max-width: 100%;
 }
 
-.home-card:hover {
+.card.home-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.home-card .card-title {
+.card.home-card .card-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #2f4f4f;
+  color: #0d0c0e;
 }
 
-.home-card .card-text {
+.card.home-card .card-text {
   font-size: 1rem;
   line-height: 1.5;
 }
 
-.home-card .btn {
+.card.home-card .btn {
+  background-color: #538DD7 !important; /* Set button background to your blue */
+  color: #000 !important;               /* Keep button text black */
   font-weight: bold;
   padding: 0.5rem 1.2rem;
   border-radius: 8px;
+  border: none;
+  font-size: 1.25rem; /* Make button text bigger */
 }
 
-.home-card .card-body {
-  flex: 1 1 auto;         /* Fills available space */
+.card.home-card .card-body {
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100px; /* Ensures all card bodies are at least this tall */
+  min-height: 100px;
 }

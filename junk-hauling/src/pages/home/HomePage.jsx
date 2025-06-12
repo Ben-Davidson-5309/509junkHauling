@@ -1,51 +1,56 @@
-import React from "react";
 import HomeCard from "../../components/HomeCard/HomeCard";
+import logo from "../../../images/junk-hauling-logo.png"
 
-const HomePage = () => {
-  return (
-    <div className="container mt-5">
+const HomePage = () => (
+  <div className="container mt-5">
+    <div className="homepage-header" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+      <img
+        src={logo}
+        alt="Junk Hauling Logo"
+        style={{ width: '60px', height: '60px' }}
+      />
       <div>
         <h1
           className="text-center mb-2 display-2 fw-bold"
-          style={{ color: "#157347", fontFamily: "'Quicksand', Arial, sans-serif" }}
+          style={{ color: "#0d0c0e", fontFamily: "'Quicksand', Arial, sans-serif" }}
         >
           509 Junk Hauling
         </h1>
         <h4
           className="text-center mb-4 display-5"
-          style={{ color: "#157347", fontFamily: "'Quicksand', Arial, sans-serif" }}
+          style={{ color: "#0d0c0e", fontFamily: "'Quicksand', Arial, sans-serif" }}
         >
           You call we Haul
         </h4>
       </div>
-      <div className="row">
-        <HomeCard
-          title="Rates and Dates"
-          description="Check out our pricing and availability."
-          linkText="View Rates and Dates"
-          linkUrl="/ratesanddates"
-        />
-        <HomeCard
-          title="Rent a Trailer"
-          description="Need a trailer? Rent one from us today!"
-          linkText="Rent a Trailer"
-          linkUrl="/rentatrailer"
-        />
-        <HomeCard
-          title="About Us"
-          description="Learn more about our company and mission."
-          linkText="About Us"
-          linkUrl="/about"
-        />
-        <HomeCard
-          title="Contact Us"
-          description="Get in touch with us for more information."
-          linkText="Contact Us"
-          linkUrl="/contact"
-        />
-      </div>
     </div>
-  );
-};
+    <div className="row">
+      <HomeCard
+        title="Rates and Dates"
+        description="Check out our pricing and availability."
+        linkText="View Rates and Dates"
+        linkUrl="/ratesanddates"
+      />
+      <HomeCard
+        title="Rent a Trailer"
+        description="Need a trailer? Rent one from us today!"
+        linkText="Rent a Trailer"
+        linkUrl="/rentatrailer"
+      />
+      <HomeCard
+        title="About Us"
+        description="Learn more about our company and mission."
+        linkText="About Us"
+        linkUrl="/about"
+      />
+      <HomeCard
+        title="Contact Us"
+        description="Get in touch with us for more information."
+        linkText="Contact Us"
+        linkUrl="/contact"
+      />
+    </div>
+  </div>
+);
 
 export default HomePage;
