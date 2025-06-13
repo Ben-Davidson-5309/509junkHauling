@@ -1,28 +1,15 @@
 import HomeCard from "../../components/HomeCard/HomeCard";
-import logo from "../../../images/junk-hauling-logo.png"
-import "./HomePage.css"
+import banner from "../../../images/junkHeader.png"; // Use your panoramic image
+import "./HomePage.css";
 
 const HomePage = () => (
   <div className="container mt-5">
-    <div className="homepage-header" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-      <img
-        src={logo}
-        alt="Junk Hauling Logo"
-        style={{ width: '60px', height: '60px' }}
-      />
-      <div>
-        <h1
-          className="text-center mb-2 display-2 fw-bold homepage-title"
-        >
-          509 Junk Hauling
-        </h1>
-        <h4
-          className="text-center mb-4 display-5 homepage-subtitle"
-        >
-          You call we Haul
-        </h4>
-      </div>
-    </div>
+    {/* Panoramic banner image at the top */}
+    <img
+      src={banner}
+      alt="509 Junk Hauling Banner"
+      className="homepage-banner-image"
+    />
     <div className="row">
       <HomeCard
         title="Rates and Dates"
