@@ -1,4 +1,3 @@
-import React from "react";
 import BookingConfirmation from "./BookingConfirmation";
 
 export default {

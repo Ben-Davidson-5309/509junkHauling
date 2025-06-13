@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 
@@ -6,7 +6,7 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
-  const toggleMenu = () => setMenuOpen(prev => !prev);
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   // Close menu when route changes (like on link click)
   useEffect(() => {

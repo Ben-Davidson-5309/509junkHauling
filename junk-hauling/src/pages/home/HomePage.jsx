@@ -1,5 +1,6 @@
 import HomeCard from "../../components/HomeCard/HomeCard";
 import logo from "../../../images/junk-hauling-logo.png"
+import "./HomePage.css"
 
 const HomePage = () => (
   <div className="container mt-5">
@@ -11,14 +12,12 @@ const HomePage = () => (
       />
       <div>
         <h1
-          className="text-center mb-2 display-2 fw-bold"
-          style={{ color: "#0d0c0e", fontFamily: "'Quicksand', Arial, sans-serif" }}
+          className="text-center mb-2 display-2 fw-bold homepage-title"
         >
           509 Junk Hauling
         </h1>
         <h4
-          className="text-center mb-4 display-5"
-          style={{ color: "#0d0c0e", fontFamily: "'Quicksand', Arial, sans-serif" }}
+          className="text-center mb-4 display-5 homepage-subtitle"
         >
           You call we Haul
         </h4>

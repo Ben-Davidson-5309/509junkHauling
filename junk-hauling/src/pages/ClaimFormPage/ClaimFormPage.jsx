@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { useForm } from '@formspree/react';
-import { useNavigate } from 'react-router-dom';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import ClaimForm from '../../components/ClaimForm/ClaimForm';
+import { useState, useEffect } from "react";
+import { useForm } from "@formspree/react";
+import { useNavigate } from "react-router-dom";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
+import ClaimForm from "../../components/ClaimForm/ClaimForm";
 
 const ClaimFormPage = () => {
   const [state, handleSubmit] = useForm(process.env.REACT_APP_FORMSPREE_ID);
@@ -13,14 +13,14 @@ const ClaimFormPage = () => {
   useEffect(() => {
     if (state.succeeded) {
       setShowModal(true);
-      document.body.classList.add('modal-open');
+      document.body.classList.add("modal-open");
     }
-    return () => document.body.classList.remove('modal-open');
+    return () => document.body.classList.remove("modal-open");
   }, [state.succeeded]);
 
   const handleCloseModal = () => {
     setShowModal(false);
-    navigate('/');
+    navigate("/");
   };
 
   return (
@@ -33,12 +33,15 @@ const ClaimFormPage = () => {
         <p className="lead">509 Junk Hauling LLC - Spokane, WA</p>
       </header>
 
-      <ClaimForm 
-        onSubmit={handleSubmit}
-        isSubmitting={state.submitting}
-      />
+      <ClaimForm onSubmit={handleSubmit} isSubmitting={state.submitting} />
 
-      <Modal show={showModal} onHide={handleCloseModal} centered backdrop="static" keyboard={false}>
+      <Modal
+        show={showModal}
+        onHide={handleCloseModal}
+        centered
+        backdrop="static"
+        keyboard={false}
+      >
         <Modal.Header closeButton>
           <Modal.Title className="text-success">
             <i className="bi bi-check-circle-fill me-2"></i>

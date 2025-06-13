@@ -1,4 +1,3 @@
-import React from "react";
 import "./FamilyAboutSection.css";
 
 const FamilyAboutSection = () => (
