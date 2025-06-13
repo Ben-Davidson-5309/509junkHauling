@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header/Header";  
 import Footer from "./components/Footer/Footer"; 
-import HomePage from "./pages/home/HomePage";
+import HomePage from "./pages/homePage/HomePage";
 import RatesAndDates from "./pages/rates-and-dates/RatesAndDates";
 import RentATrailer from "./pages/rentAtrailer/RentATrailer";
 import AboutPage from "./pages/aboutPage/AboutPage"

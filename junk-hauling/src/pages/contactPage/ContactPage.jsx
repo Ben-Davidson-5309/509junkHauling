@@ -1,10 +1,12 @@
-const ContactPage = () => {
+import FamilyAboutSection from "../../components/AboutFamily/FamilyAboutSection";
+
+const AboutPage = () => {
   return (
-    <div>
-      <h1>Contact Us</h1>
-      <p>If you have any questions, feel free to reach out!</p>
+    <div className="container py-5">
+      <h1 className="mb-4 text-center display-2 fw-bold">Contact Info</h1>
+      <FamilyAboutSection />
     </div>
   );
 };
 
-export default ContactPage;
+export default AboutPage;

@@ -2,7 +2,7 @@
 .card.home-card {
   border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #A1D99B !important;
+  background-color: #a1d99b !important;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -16,19 +16,19 @@
 
 .card.home-card .card-title {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #0d0c0e;
 }
 
 .card.home-card .card-text {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
 .card.home-card .btn {
-  background-color: #538DD7 !important; /* Set button background to your blue */
-  color: #000 !important;               /* Keep button text black */
-  font-weight: bold;
+  background-color: #538dd7 !important; /* Set button background to your blue */
+  color: #000 !important; /* Keep button text black */
+  font-weight:600;
   padding: 0.5rem 1.2rem;
   border-radius: 8px;
   border: none;
