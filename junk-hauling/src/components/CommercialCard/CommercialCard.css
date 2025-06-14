@@ -2,7 +2,7 @@
 .card.home-card {
   border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #538dd7 !important;
+  background-color: #538dd7 !important; /* Blue */
   display: flex;
   flex-direction: column;
   width: 100%;

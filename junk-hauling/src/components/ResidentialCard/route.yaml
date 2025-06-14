@@ -1,0 +1,3 @@
+import {ResidentialCard} from "./ResidentialCard"
+
+export default ResidentialCard;

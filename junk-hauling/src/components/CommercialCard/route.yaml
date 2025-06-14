@@ -1,0 +1,3 @@
+import {CommercialCard} from "./CommercialCard"
+
+export default CommercialCard;

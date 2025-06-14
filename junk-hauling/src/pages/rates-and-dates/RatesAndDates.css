@@ -1,24 +1,33 @@
 /* RatesAndDates.css */
-
-.rates-and-dates {
-  text-align: center;
-  padding: 20px;
-}
-
+/* Headings: ensure black */
 .heading-text {
-  color: #157347;
-  font-family: 'Quicksand', Arial, sans-serif;
+  color: #0d0c0e !important;
 }
 
-.heading-subtext {
-  color: #157347;
-  font-family: 'Quicksand', Arial, sans-serif;
+/* Blue background button with black text */
+.custom-blue-btn {
+  background-color: #538dd7 !important;
+  color: #000 !important;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.custom-blue-btn:hover {
+  background-color: #417cc4 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+
 
 .calendar-caption {
   font-size: 1.75rem;
   font-weight: bold;
-  color: #157347;
+  color: #0d0c0e;
   text-transform: capitalize;
   margin-bottom: 1rem;
 }
