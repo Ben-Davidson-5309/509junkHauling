@@ -1,11 +1,11 @@
 /* Base reset and layout already included earlier */
 
 .navbar {
-  background-color: #A1D99B !important; /* semi-transparent white */
-  backdrop-filter: blur(8px); /* adds blur to what's behind */
+  background: transparent !important;
+  backdrop-filter: none;
   box-shadow: none;
-  border: 2px solid #0d0c0e;      /* Add this line for a colored border */
-  border-radius: 1rem;             /* Optional: rounded corners */
+  border: 2px solid #0d0c0e;
+  border-radius: 1rem;
   padding: 1.25rem 2rem;
   margin: 1rem auto;
   max-width: 1200px;

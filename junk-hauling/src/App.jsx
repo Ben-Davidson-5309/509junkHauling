@@ -12,7 +12,6 @@ import AboutPage from "./pages/aboutPage/AboutPage"
 import ContactPage from "./pages/contactPage/ContactPage";
 import {FormPage} from "./pages/formPage/FormPage";
 import ConfirmationPage from "./pages/confirmation/ConfirmationPage";
-import FadedBackground from "./components/BackgroundImage/FadedBackground";
 import BookAppointment from "./pages/book-appointment/BookAppointment";
 import TermsPage from "./pages/terms/TermsPage";
 import ClaimFormPage from "./pages/ClaimFormPage/ClaimFormPage";
@@ -53,7 +52,6 @@ const App = () => {
 
   return (
     <>
-      <FadedBackground />
       <Header />
       <main>
         {routes.length > 0 ? (
