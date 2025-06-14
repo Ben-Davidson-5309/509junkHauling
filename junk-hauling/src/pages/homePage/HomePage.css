@@ -8,12 +8,16 @@
   font-family: 'Quicksand', Arial, sans-serif;
 }
 
+
+
 .homepage-banner-image {
   width: 100%;
-  max-height: 250px;
-  object-fit: cover;
+  max-height: 360px;
+  object-fit: contain; /* or remove this line */
   border-radius: 12px;
   margin-bottom: 2rem;
   display: block;
-  opacity: 1 !important; /* Ensures full opacity */
+  opacity: 1 !important;
+  position: relative; /* needed if you're layering it */
+  z-index: 10; /* higher than background */
 }

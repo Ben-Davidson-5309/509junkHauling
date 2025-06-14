@@ -1,5 +1,5 @@
 import HomeCard from "../../components/HomeCard/HomeCard";
-import banner from "../../../images/junkHeader.png"; // Use your panoramic image
+import banner from "../../../images/junkHeader.jpg"; // Use your panoramic image
 import "./HomePage.css";
 
 const HomePage = () => (
